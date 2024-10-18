@@ -4,6 +4,8 @@ namespace CodeWithDennis\FilamentThemeInspector;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\Support\Assets\Js;
+use Filament\Support\Facades\FilamentAsset;
 
 class FilamentThemeInspectorPlugin implements Plugin
 {
@@ -14,7 +16,9 @@ class FilamentThemeInspectorPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        FilamentAsset::register([
+            Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
+        ]);
     }
 
     public function boot(Panel $panel): void

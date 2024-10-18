@@ -101,8 +101,8 @@ class FilamentThemeInspectorServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-theme-inspector', __DIR__ . '/../resources/dist/components/filament-theme-inspector.js'),
-            Css::make('filament-theme-inspector-styles', __DIR__ . '/../resources/dist/filament-theme-inspector.css'),
-            Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
+            //            Css::make('filament-theme-inspector-styles', __DIR__ . '/../resources/dist/filament-theme-inspector.css'),
+            //            Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
         ];
     }
 
