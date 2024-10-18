@@ -7,7 +7,7 @@
 
 Easily see the fi- class of any element on the page by hovering over it. A tooltip displays the class name, and you can copy it with a click!
 
-[example.mov](example.mov)
+https://github.com/CodeWithDennis/filament-theme-inspector/blob/main/example.mov
 
 ## Installation
 
