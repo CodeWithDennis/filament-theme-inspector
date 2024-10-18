@@ -1,11 +1,11 @@
 @import '../../vendor/filament/filament/resources/css/theme.css';
 
 .theme-inspector-container {
-    @apply fixed z-50 items-center hidden gap-3 bg-transparent;
+    @apply fixed z-[9999] items-center hidden gap-2 bg-transparent;
 }
 
 .theme-inspector-container>div {
-    @apply flex items-center p-2 overflow-hidden bg-white rounded-lg shadow-lg top-5 left-5 ring-1 ring-gray-950/5 whitespace-nowrap dark:divide-white/5 dark:bg-gray-900 dark:ring-white/10;
+    @apply flex items-center px-[15px] py-[10px] overflow-hidden bg-white rounded-[5px] ring-1 ring-gray-950/5 whitespace-nowrap dark:divide-white/5 dark:bg-gray-900 dark:ring-white/10;
 }
 
 .theme-inspector-container.is-visible {
