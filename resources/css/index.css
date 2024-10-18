@@ -1,1 +1,21 @@
 @import '../../vendor/filament/filament/resources/css/theme.css';
+
+.theme-inspector {
+    @apply fixed z-50 items-center hidden px-3 py-2 overflow-hidden bg-white rounded-lg shadow-lg top-5 left-5 ring-1 ring-gray-950/5 whitespace-nowrap dark:divide-white/5 dark:bg-gray-900 dark:ring-white/10;
+}
+
+.theme-inspector.is-visible {
+    display: flex;
+}
+
+.theme-inspector>.class-text {
+    @apply text-black dark:text-gray-200 me-3;
+}
+
+.theme-inspector>button {
+    @apply p-2 transition duration-300 ease-in-out bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-opacity-60;
+}
+
+.theme-inspector>button>svg {
+    @apply fill-white dark:fill-none
+}
