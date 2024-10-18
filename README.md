@@ -18,6 +18,7 @@ composer require codewithdennis/filament-theme-inspector
 ## Usage
 
 Add the following plugin to your plugins method on your page or form.
+
 ```php
 use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
 
@@ -26,6 +27,9 @@ use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
         ->disabled(fn () => ! app()->hasDebugModeEnabled())
 ])
 ```
+
+### Copy
+When you hover over an element on the page, a tooltip will appear with the fi- class name. You can click on the copy icon to copy the class name to your clipboard. Hold `ALT` or `OPTION` key to freeze the tooltip in place, so you can copy the class name.
 
 ## Testing
 

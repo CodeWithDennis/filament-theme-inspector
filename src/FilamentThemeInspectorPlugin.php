@@ -8,6 +8,7 @@ use Filament\Panel;
 use Filament\Support\Assets\Js;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Facades\FilamentAsset;
+use Illuminate\Support\HtmlString;
 
 class FilamentThemeInspectorPlugin implements Plugin
 {
@@ -40,7 +41,7 @@ class FilamentThemeInspectorPlugin implements Plugin
             ]);
 
             FilamentAsset::registerScriptData([
-                // Add your script data here
+                'icon' => new HtmlString('<x-filament::icon icon="heroicon-o-cog" />'),
             ]);
         }
     }
