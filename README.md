@@ -8,9 +8,7 @@
 Easily see the fi- class of any element on the page by hovering over it. A tooltip displays the class name, and you can copy it with a click!
 
 
-
-https://github.com/user-attachments/assets/475e2368-3c08-42ca-a445-bfdc34b0907f
-
+https://github.com/user-attachments/assets/d8ecbc95-cfbf-4340-8405-2814a03739c5
 
 
 ## Installation
