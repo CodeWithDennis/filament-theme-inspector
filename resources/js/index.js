@@ -2,12 +2,7 @@
 function createPopup() {
 
     const popup = document.createElement('div');
-    popup.classList.add('theme-inspector');
-
-
-    const textNode = document.createElement('span');
-    textNode.classList.add('class-text');
-    popup.appendChild(textNode);
+    popup.classList.add('theme-inspector-container');
 
     document.body.appendChild(popup);
     return popup;
@@ -15,23 +10,10 @@ function createPopup() {
 
 function createCopyableItem(text) {
     const item = document.createElement('div'); // Each item is a separate div
-    item.style.cssText = `
-        background: rgba(0, 0, 0, 0.8); 
-        padding: 10px 15px; 
-        border-radius: 5px; 
-        margin-left: 5px;
-        margin-bottom: 10px;
-        display: flex; 
-        align-items: center;
-        white-space: nowrap;           /* Prevent text wrapping */
-        overflow: hidden;              /* Hide overflowed text */
-        text-overflow: ellipsis;       /* Show ellipsis for overflowed text */
-    `;
 
     const textNode = document.createElement('span');
+    textNode.classList.add('class-text');
     textNode.textContent = text;
-    textNode.style.color = 'white';
-    textNode.style.marginRight = '10px';
 
     const copyButton = document.createElement('button');
 
