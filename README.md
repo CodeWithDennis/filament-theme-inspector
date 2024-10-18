@@ -15,28 +15,16 @@ You can install the package via composer:
 composer require codewithdennis/filament-theme-inspector
 ```
 
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="filament-theme-inspector-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-theme-inspector-views"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
 ## Usage
 
+Add the following plugin to your plugins method on your page or form.
 ```php
+use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
+
+->plugins([
+    FilamentThemeInspectorPlugin::make(),
+])
+```
 //
 ```
 
