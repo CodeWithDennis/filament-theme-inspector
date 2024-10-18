@@ -1,1 +1,0 @@
-<x-filament::icon icon="heroicon-o-cog" />
