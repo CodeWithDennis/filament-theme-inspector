@@ -23,7 +23,7 @@ composer require codewithdennis/filament-theme-inspector
 
 ## Usage
 
-Add the following plugin to your plugins method on your page or form.
+Add the following plugin to your plugins method on your panel.
 
 ```php
 use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
