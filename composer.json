@@ -1,29 +1,27 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "codewithdennis/filament-theme-inspector",
+    "description": "Easily see the fi- class of any element on the page by hovering over it. A tooltip displays the class name, and you can copy it with a click!",
     "keywords": [
-        ":vendor_name",
+        "CodeWithDennis",
         "laravel",
-        ":package_slug"
+        "filament-theme-inspector"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/codewithdennis/filament-theme-inspector",
     "support": {
-        "issues": "https://github.com/:vendor_slug/:package_slug/issues",
-        "source": "https://github.com/:vendor_slug/:package_slug"
+        "issues": "https://github.com/codewithdennis/filament-theme-inspector/issues",
+        "source": "https://github.com/codewithdennis/filament-theme-inspector"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "CodeWithDennis",
+            "email": "personal.elsinga@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
         "filament/filament": "^3.0",
-        "filament/forms": "^3.0",
-        "filament/tables": "^3.0",
         "spatie/laravel-package-tools": "^1.15.0"
     },
     "require-dev": {
@@ -36,18 +34,17 @@
         "pestphp/pest-plugin-laravel": "^2.0",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
-        "phpstan/phpstan-phpunit": "^1.0",
-        "spatie/laravel-ray": "^1.26"
+        "phpstan/phpstan-phpunit": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "CodeWithDennis\\FilamentThemeInspector\\": "src/",
+            "CodeWithDennis\\FilamentThemeInspector\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/"
+            "CodeWithDennis\\FilamentThemeInspector\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -67,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "CodeWithDennis\\FilamentThemeInspector\\FilamentThemeInspectorServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "FilamentThemeInspector": "CodeWithDennis\\FilamentThemeInspector\\Facades\\FilamentThemeInspector"
             }
         }
     },
