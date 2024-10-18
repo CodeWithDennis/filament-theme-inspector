@@ -1,6 +1,5 @@
 
 function createPopup() {
-
     const popup = document.createElement('div');
     popup.classList.add('theme-inspector-container');
 
@@ -9,13 +8,12 @@ function createPopup() {
 }
 
 function createCopyableItem(text) {
-    const item = document.createElement('div'); // Each item is a separate div
-
     const textNode = document.createElement('span');
+    const copyButton = document.createElement('button');
+    const item = document.createElement('div');
+
     textNode.classList.add('class-text');
     textNode.textContent = text;
-
-    const copyButton = document.createElement('button');
 
     const copyIcon = `
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="fi-btn-icon transition duration-75 h-5 w-5 text-gray-400 dark:text-gray-500">
