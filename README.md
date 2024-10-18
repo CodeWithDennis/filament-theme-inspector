@@ -25,8 +25,6 @@ use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
     FilamentThemeInspectorPlugin::make(),
 ])
 ```
-//
-```
 
 ## Testing
 
