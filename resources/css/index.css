@@ -5,7 +5,7 @@
 }
 
 .theme-inspector.is-visible {
-    display: flex;
+    @apply flex;
 }
 
 .theme-inspector>.class-text {
