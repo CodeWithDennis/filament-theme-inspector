@@ -8,7 +8,6 @@ use Filament\Panel;
 use Filament\Support\Assets\Js;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Facades\FilamentAsset;
-use Illuminate\Support\HtmlString;
 
 class FilamentThemeInspectorPlugin implements Plugin
 {
@@ -38,10 +37,6 @@ class FilamentThemeInspectorPlugin implements Plugin
         if (! $this->isDisabled()) {
             FilamentAsset::register([
                 Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
-            ]);
-
-            FilamentAsset::registerScriptData([
-                'icon' => new HtmlString('<x-filament::icon icon="heroicon-o-cog" />'),
             ]);
         }
     }
