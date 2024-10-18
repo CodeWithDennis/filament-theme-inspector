@@ -8,9 +8,6 @@ use Filament\Panel;
 use Filament\Support\Assets\Js;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Facades\FilamentAsset;
-use Filament\Support\Facades\FilamentView;
-use Filament\View\PanelsRenderHook;
-use Illuminate\Contracts\View\View;
 
 class FilamentThemeInspectorPlugin implements Plugin
 {
@@ -37,16 +34,15 @@ class FilamentThemeInspectorPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        FilamentView::registerRenderHook(
-            PanelsRenderHook::BODY_END,
-            fn (): View => view('filament-theme-inspector::inspector', [
-                'disabled' => $this->isDisabled(),
-            ]),
-        );
+        if (! $this->isDisabled()) {
+            FilamentAsset::register([
+                Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
+            ]);
 
-        //        FilamentAsset::register([
-        //            Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
-        //        ]);
+            FilamentAsset::registerScriptData([
+                // Add your script data here
+            ]);
+        }
     }
 
     public function boot(Panel $panel): void
