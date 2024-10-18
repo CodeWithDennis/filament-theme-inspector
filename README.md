@@ -22,7 +22,8 @@ Add the following plugin to your plugins method on your page or form.
 use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
 
 ->plugins([
-    FilamentThemeInspectorPlugin::make(),
+    FilamentThemeInspectorPlugin::make()
+        ->disabled(fn () => ! app()->hasDebugModeEnabled())
 ])
 ```
 
