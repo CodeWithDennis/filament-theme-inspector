@@ -5,7 +5,7 @@
 }
 
 .theme-inspector-container > div {
-    @apply flex items-center px-[15px] py-[10px] overflow-hidden bg-white rounded-[5px] ring-1 ring-gray-950/5 whitespace-nowrap dark:divide-white/5 dark:bg-gray-900 dark:ring-white/10;
+    @apply flex items-center px-[10px] py-[5px] overflow-hidden bg-white rounded-[5px] ring-1 ring-gray-950/5 whitespace-nowrap dark:divide-white/5 dark:bg-gray-900 dark:ring-white/10;
 }
 
 .theme-inspector-container.is-visible {
