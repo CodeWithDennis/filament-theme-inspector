@@ -5,6 +5,7 @@ namespace CodeWithDennis\FilamentThemeInspector;
 use Closure;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
 use Filament\Support\Concerns\EvaluatesClosures;
 use Filament\Support\Facades\FilamentAsset;
@@ -37,6 +38,7 @@ class FilamentThemeInspectorPlugin implements Plugin
         if (! $this->isDisabled()) {
             FilamentAsset::register([
                 Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
+                Css::make('filament-theme-inspector-styles', __DIR__ . '/../resources/dist/filament-theme-inspector.css'),
             ]);
         }
     }
