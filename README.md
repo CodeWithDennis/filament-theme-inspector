@@ -37,7 +37,7 @@ By default, the freeze button needs to be held down to freeze the tooltip in pla
 
 ```php
 FilamentThemeInspectorPlugin::make()
-    ->toggle(false),
+    ->toggle(),
 ```
 
 ## Testing
