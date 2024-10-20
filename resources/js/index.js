@@ -1,4 +1,3 @@
-
 function createPopup() {
     const popup = document.createElement('div');
     popup.classList.add('theme-inspector-container');
@@ -94,19 +93,25 @@ document.body.addEventListener('mouseenter', (e) => {
 }, true);
 
 document.body.addEventListener('mouseleave', (e) => {
-    // Hide the popup when the mouse leaves the target
     if (e.target.matches('[class*="fi-"]') && !isFrozen) {
         hidePopup(popup);
     }
 }, true);
 
-document.addEventListener('keydown', (e) => {
-    if (e.altKey) {
-        isFrozen = true;
-        popup.style.pointerEvents = 'auto';
-    }
-});
+if (window.filamentData.toggle === true) {
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Alt') {
+            isFrozen = !isFrozen;
+        }
+    });
+} else {
+    document.addEventListener('keydown', (e) => {
+        if (e.altKey) {
+            isFrozen = true;
+        }
+    });
 
-document.addEventListener('keyup', (e) => {
-    if (e.key === 'Alt' || e.key === 'Meta') isFrozen = false;
-});
+    document.addEventListener('keyup', (e) => {
+        if (e.key === 'Alt' || e.key === 'Meta') isFrozen = false;
+    });
+}

@@ -16,9 +16,18 @@ class FilamentThemeInspectorPlugin implements Plugin
 
     protected Closure | bool $disabled = false;
 
+    protected bool $toggle = false;
+
     public function getId(): string
     {
         return 'filament-theme-inspector';
+    }
+
+    public function toggle(bool $toggle = true): self
+    {
+        $this->toggle = $toggle;
+
+        return $this;
     }
 
     public function disabled(Closure | bool $disabled = true): self
@@ -33,12 +42,21 @@ class FilamentThemeInspectorPlugin implements Plugin
         return $this->evaluate($this->disabled);
     }
 
+    public function isToggle(): bool
+    {
+        return $this->toggle;
+    }
+
     public function register(Panel $panel): void
     {
         if (! $this->isDisabled()) {
             FilamentAsset::register([
                 Js::make('filament-theme-inspector-scripts', __DIR__ . '/../resources/dist/filament-theme-inspector.js'),
                 Css::make('filament-theme-inspector-styles', __DIR__ . '/../resources/dist/filament-theme-inspector.css'),
+            ]);
+
+            FilamentAsset::registerScriptData([
+                'toggle' => $this->isToggle(),
             ]);
         }
     }
