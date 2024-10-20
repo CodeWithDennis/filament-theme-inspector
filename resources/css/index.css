@@ -5,7 +5,8 @@
 }
 
 .theme-inspector-container > div {
-    @apply flex items-center px-[10px] py-[5px] overflow-hidden bg-white rounded-[5px] ring-1 ring-gray-950/5 whitespace-nowrap dark:divide-white/5 dark:bg-gray-900 dark:ring-white/10;
+    @apply flex items-center px-[10px] py-[5px] pl-[10px] pr-[7px] overflow-hidden bg-white rounded-[5px] ring-1 ring-gray-950/5 whitespace-nowrap dark:divide-white/5 dark:bg-gray-900 dark:ring-white/10;
+    font-size: 12px;
 }
 
 .theme-inspector-container.is-visible {
@@ -13,13 +14,15 @@
 }
 
 .theme-inspector-container > div > .class-text {
-    @apply text-black dark:text-gray-200 me-3;
+    @apply text-black dark:text-gray-200 me-3 font-semibold;
 }
 
 .theme-inspector-container > div > button {
-    @apply p-2 transition duration-300 ease-in-out bg-gray-100 rounded-lg hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-opacity-60;
+    @apply p-[0.1rem] transition duration-300 ease-in-out bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-opacity-60;
+    border-radius: 0.2rem;
+
 }
 
 .theme-inspector-container > div > button > svg {
-    @apply fill-white dark:fill-none
+    @apply fill-none;
 }
