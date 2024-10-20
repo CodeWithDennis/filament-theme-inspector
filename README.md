@@ -32,8 +32,13 @@ use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
 ])
 ```
 
-### Copy
-When you hover over an element on the page, a tooltip will appear with the fi- class name. You can click on the copy icon to copy the class name to your clipboard. Hold `ALT` or `OPTION` key to freeze the tooltip in place, so you can copy the class name.
+### Freeze (Hold / Toggle)
+By default, the freeze button needs to be held down to freeze the tooltip in place. You can change this behavior to toggle by using the toggle method.
+
+```php
+FilamentThemeInspectorPlugin::make()
+    ->toggle(false),
+```
 
 ## Testing
 
