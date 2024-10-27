@@ -19,6 +19,12 @@ You can install the package via composer:
 composer require codewithdennis/filament-theme-inspector
 ```
 
+Make sure you clear the cache after installing the package.
+
+```bash
+php artisan filament:upgrade
+```
+
 ## Usage
 
 Add the following plugin to your plugins method on your panel.
