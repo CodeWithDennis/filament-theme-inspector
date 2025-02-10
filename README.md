@@ -39,7 +39,7 @@ use CodeWithDennis\FilamentThemeInspector\FilamentThemeInspectorPlugin;
 ```
 
 ### Freeze (Hold / Toggle)
-By default, the freeze button (ALT or CMD) needs to be held down to freeze the tooltip in place. You can change this behavior to toggle by using the toggle method.
+By default, the freeze button (`ALT` or `⌘`) needs to be held down to freeze the tooltip in place. You can change this behavior to toggle by using the toggle method.
 
 ```php
 FilamentThemeInspectorPlugin::make()
