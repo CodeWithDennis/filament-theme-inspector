@@ -2,7 +2,6 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/codewithdennis/filament-theme-inspector.svg?style=flat-square)](https://packagist.org/packages/codewithdennis/filament-theme-inspector)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/codewithdennis/filament-theme-inspector/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/codewithdennis/filament-theme-inspector/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/codewithdennis/filament-theme-inspector/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/codewithdennis/filament-theme-inspector/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/codewithdennis/filament-theme-inspector.svg?style=flat-square)](https://packagist.org/packages/codewithdennis/filament-theme-inspector)
 
 Easily see the fi- class of any element on the page by hovering over it. A tooltip displays the class name, and you can copy it with a click!
