@@ -9,6 +9,12 @@ Easily see the fi- class of any element on the page by hovering over it. A toolt
 
 https://github.com/user-attachments/assets/d8ecbc95-cfbf-4340-8405-2814a03739c5
 
+## Requirements
+
+- PHP 8.2+
+- Laravel 11.28+
+- Filament 3.x or 4.x
+- Tailwind CSS 4.x (when using Filament 4.x)
 
 ## Installation
 
